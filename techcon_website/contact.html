@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us - TechCon 2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        header, footer {
+            background-color: #222;
+            color: white;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: #ddd;
+            margin-right: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+        main {
+            background: white;
+            padding: 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            margin-top: 0;
+        }
+        a.email-link {
+            color: #0073e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a.email-link:hover {
+            text-decoration: underline;
+        }
+        .social-links a {
+            margin-right: 15px;
+            color: #0073e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        form {
+            max-width: 600px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            resize: vertical;
+            font-size: 1em;
+        }
+        button[type="submit"] {
+            margin-top: 20px;
+            background-color: #222;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Information</h2>
+            <p>Email: <a class="email-link" href="mailto:email@example.com">email@example.com</a></p>
+            <div class="social-links">
+                <a href="https://facebook.com/TechCon" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://twitter.com/TechCon" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a href="https://linkedin.com/company/TechCon" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Conference Venue</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086797959904!2d-122.41941548468168!3d37.774929779759196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064ca9edebd%3A0x9e31601f9dce3b13!2sMoscone%20Center!5e0!3m2!1sen!2sus!4v1620075889623!5m2!1sen!2sus"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="TechCon Venue Location">
+            </iframe>
+        </section>
+
+        <section>
+            <h2>Contact Us Form</h2>
+            <form action="#" method="post" novalidate>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024 TechCon. All rights reserved.</p>
+    </footer>
+</body>
+</html>
